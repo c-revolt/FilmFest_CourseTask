@@ -13,9 +13,12 @@
 		D0A970752912BAC700FA6697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A970732912BAC700FA6697 /* Main.storyboard */; };
 		D0A970772912BAD100FA6697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A970762912BAD100FA6697 /* Assets.xcassets */; };
 		D0A9707A2912BAD100FA6697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A970782912BAD100FA6697 /* LaunchScreen.storyboard */; };
-		D0A970852912BAD200FA6697 /* FilmFest_CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A970842912BAD200FA6697 /* FilmFest_CourseTests.swift */; };
 		D0A9708F2912BAD200FA6697 /* FilmFest_CourseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9708E2912BAD200FA6697 /* FilmFest_CourseUITests.swift */; };
 		D0A970912912BAD200FA6697 /* FilmFest_CourseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A970902912BAD200FA6697 /* FilmFest_CourseUITestsLaunchTests.swift */; };
+		D0A9709E2912C17200FA6697 /* MovieStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9709D2912C17200FA6697 /* MovieStructTests.swift */; };
+		D0A970A02912C2B800FA6697 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9709F2912C2B800FA6697 /* Movie.swift */; };
+		D0A970A62912CE8C00FA6697 /* MovieManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A970A52912CE8C00FA6697 /* MovieManagerTest.swift */; };
+		D0A970A82912CF9200FA6697 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A970A72912CF9200FA6697 /* MovieManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +48,13 @@
 		D0A970792912BAD100FA6697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A9707B2912BAD100FA6697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A970802912BAD200FA6697 /* FilmFest_CourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFest_CourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0A970842912BAD200FA6697 /* FilmFest_CourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFest_CourseTests.swift; sourceTree = "<group>"; };
 		D0A9708A2912BAD200FA6697 /* FilmFest_CourseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFest_CourseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A9708E2912BAD200FA6697 /* FilmFest_CourseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFest_CourseUITests.swift; sourceTree = "<group>"; };
 		D0A970902912BAD200FA6697 /* FilmFest_CourseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFest_CourseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0A9709D2912C17200FA6697 /* MovieStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStructTests.swift; sourceTree = "<group>"; };
+		D0A9709F2912C2B800FA6697 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D0A970A52912CE8C00FA6697 /* MovieManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTest.swift; sourceTree = "<group>"; };
+		D0A970A72912CF9200FA6697 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,8 @@
 			children = (
 				D0A9706D2912BAC700FA6697 /* AppDelegate.swift */,
 				D0A9706F2912BAC700FA6697 /* SceneDelegate.swift */,
-				D0A970712912BAC700FA6697 /* ViewController.swift */,
+				D0A970A22912C83200FA6697 /* Models */,
+				D0A970A32912C84000FA6697 /* Controllers */,
 				D0A970732912BAC700FA6697 /* Main.storyboard */,
 				D0A970762912BAD100FA6697 /* Assets.xcassets */,
 				D0A970782912BAD100FA6697 /* LaunchScreen.storyboard */,
@@ -113,7 +120,8 @@
 		D0A970832912BAD200FA6697 /* FilmFest_CourseTests */ = {
 			isa = PBXGroup;
 			children = (
-				D0A970842912BAD200FA6697 /* FilmFest_CourseTests.swift */,
+				D0A970A42912C85500FA6697 /* TestControllers */,
+				D0A970A12912C81D00FA6697 /* Test Models */,
 			);
 			path = FilmFest_CourseTests;
 			sourceTree = "<group>";
@@ -125,6 +133,39 @@
 				D0A970902912BAD200FA6697 /* FilmFest_CourseUITestsLaunchTests.swift */,
 			);
 			path = FilmFest_CourseUITests;
+			sourceTree = "<group>";
+		};
+		D0A970A12912C81D00FA6697 /* Test Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9709D2912C17200FA6697 /* MovieStructTests.swift */,
+				D0A970A52912CE8C00FA6697 /* MovieManagerTest.swift */,
+			);
+			path = "Test Models";
+			sourceTree = "<group>";
+		};
+		D0A970A22912C83200FA6697 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9709F2912C2B800FA6697 /* Movie.swift */,
+				D0A970A72912CF9200FA6697 /* MovieManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0A970A32912C84000FA6697 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A970712912BAC700FA6697 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D0A970A42912C85500FA6697 /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +239,7 @@
 					};
 					D0A9707F2912BAD200FA6697 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = D0A970692912BAC700FA6697;
 					};
 					D0A970892912BAD200FA6697 = {
@@ -260,6 +302,8 @@
 			files = (
 				D0A970722912BAC700FA6697 /* ViewController.swift in Sources */,
 				D0A9706E2912BAC700FA6697 /* AppDelegate.swift in Sources */,
+				D0A970A82912CF9200FA6697 /* MovieManager.swift in Sources */,
+				D0A970A02912C2B800FA6697 /* Movie.swift in Sources */,
 				D0A970702912BAC700FA6697 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A970852912BAD200FA6697 /* FilmFest_CourseTests.swift in Sources */,
+				D0A970A62912CE8C00FA6697 /* MovieManagerTest.swift in Sources */,
+				D0A9709E2912C17200FA6697 /* MovieStructTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,11 +544,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a.pride.FilmFest-CourseTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +562,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmFest_Course.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FilmFest_Course";
@@ -522,11 +574,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a.pride.FilmFest-CourseTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
