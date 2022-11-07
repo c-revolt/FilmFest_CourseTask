@@ -122,8 +122,6 @@
 		D0A9706C2912BAC700FA6697 /* FilmFest_Course */ = {
 			isa = PBXGroup;
 			children = (
-				D0AB86B92918E40000F7ED94 /* screenshot1.png */,
-				D0AB86BA2918E40100F7ED94 /* screenshot2.png */,
 				D0B355252917B7FC007779E6 /* Views */,
 				D0B3546129154650007779E6 /* DataService */,
 				D0A9706D2912BAC700FA6697 /* AppDelegate.swift */,
@@ -196,6 +194,8 @@
 		D0AB86B82918E3EF00F7ED94 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				D0AB86B92918E40000F7ED94 /* screenshot1.png */,
+				D0AB86BA2918E40100F7ED94 /* screenshot2.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
