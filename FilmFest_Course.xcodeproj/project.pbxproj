@@ -19,6 +19,8 @@
 		D0A970A02912C2B800FA6697 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9709F2912C2B800FA6697 /* Movie.swift */; };
 		D0A970A62912CE8C00FA6697 /* MovieManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A970A52912CE8C00FA6697 /* MovieManagerTest.swift */; };
 		D0A970A82912CF9200FA6697 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A970A72912CF9200FA6697 /* MovieManager.swift */; };
+		D0AB86BB2918E40100F7ED94 /* screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB86B92918E40000F7ED94 /* screenshot1.png */; };
+		D0AB86BC2918E40100F7ED94 /* screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AB86BA2918E40100F7ED94 /* screenshot2.png */; };
 		D0B3546029153B87007779E6 /* LibraryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3545F29153B87007779E6 /* LibraryViewControllerTests.swift */; };
 		D0B354632915468B007779E6 /* MovieLibraryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B354622915468B007779E6 /* MovieLibraryDataService.swift */; };
 		D0B3552429157C1B007779E6 /* MovieLibraryDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3552329157C1B007779E6 /* MovieLibraryDataServiceTests.swift */; };
@@ -61,6 +63,8 @@
 		D0A9709F2912C2B800FA6697 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D0A970A52912CE8C00FA6697 /* MovieManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTest.swift; sourceTree = "<group>"; };
 		D0A970A72912CF9200FA6697 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		D0AB86B92918E40000F7ED94 /* screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1.png; sourceTree = "<group>"; };
+		D0AB86BA2918E40100F7ED94 /* screenshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot2.png; sourceTree = "<group>"; };
 		D0B3545F29153B87007779E6 /* LibraryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewControllerTests.swift; sourceTree = "<group>"; };
 		D0B354622915468B007779E6 /* MovieLibraryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataService.swift; sourceTree = "<group>"; };
 		D0B3552329157C1B007779E6 /* MovieLibraryDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataServiceTests.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		D0A970612912BAC700FA6697 = {
 			isa = PBXGroup;
 			children = (
+				D0AB86B82918E3EF00F7ED94 /* Screenshots */,
 				D0A9706C2912BAC700FA6697 /* FilmFest_Course */,
 				D0A970832912BAD200FA6697 /* FilmFest_CourseTests */,
 				D0A9708D2912BAD200FA6697 /* FilmFest_CourseUITests */,
@@ -117,6 +122,8 @@
 		D0A9706C2912BAC700FA6697 /* FilmFest_Course */ = {
 			isa = PBXGroup;
 			children = (
+				D0AB86B92918E40000F7ED94 /* screenshot1.png */,
+				D0AB86BA2918E40100F7ED94 /* screenshot2.png */,
 				D0B355252917B7FC007779E6 /* Views */,
 				D0B3546129154650007779E6 /* DataService */,
 				D0A9706D2912BAC700FA6697 /* AppDelegate.swift */,
@@ -184,6 +191,13 @@
 				D0B3545F29153B87007779E6 /* LibraryViewControllerTests.swift */,
 			);
 			path = TestControllers;
+			sourceTree = "<group>";
+		};
+		D0AB86B82918E3EF00F7ED94 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		D0B3546129154650007779E6 /* DataService */ = {
@@ -332,7 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A9707A2912BAD100FA6697 /* LaunchScreen.storyboard in Resources */,
+				D0AB86BB2918E40100F7ED94 /* screenshot1.png in Resources */,
 				D0A970772912BAD100FA6697 /* Assets.xcassets in Resources */,
+				D0AB86BC2918E40100F7ED94 /* screenshot2.png in Resources */,
 				D0A970752912BAC700FA6697 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
